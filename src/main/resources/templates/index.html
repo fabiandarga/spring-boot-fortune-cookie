@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Find your luck!</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>Find your luck!</h1>
+        <div class="fortune-box">
+            <p th:text="${fortune}">Your fortune will appear here.</p>
+        </div>
+        <form action="/" method="get">
+            <button type="submit" class="btn">Get Another Fortune</button>
+        </form>
+    </div>
+</body>
+</html>
